@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5",
+    "nodemon": "^3.1.11"
+  },
+  "name": "wcag_website",
+  "version": "1.0.0",
+  "description": "Make a website with good WCAG that allows others with physical problems visit the website without a problem",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Destroyerofdarkness/WCAG_WEBSITE.git"
+  },
+  "author": "Megatron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Destroyerofdarkness/WCAG_WEBSITE/issues"
+  },
+  "homepage": "https://github.com/Destroyerofdarkness/WCAG_WEBSITE#readme"
+}
