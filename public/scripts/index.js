@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded",async(e)=>{
         data.cats.forEach(cat => {
             main.innerHTML += `
             <a href="/cat/${cat.name}">
-            <img src=${cat.img} alt="A cat picture where the cat shows gis tongue in a silly way">
-            <h1>${cat.name}</h1>
+            <img src=${cat.img} alt="A cat picture where the cat is very silly and the picture looks funny">
+            <h2>${cat.name}</h2>
             </a>
             `
         });
