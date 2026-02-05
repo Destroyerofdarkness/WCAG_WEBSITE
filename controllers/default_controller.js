@@ -1,4 +1,4 @@
-const {findCatDetails}= require("../handlers/fetchCatData")
+const {findCatDetails, randomCat}= require("../handlers/fetchCatData")
 
 const homepage_render = (req,res)=>{
     try{
@@ -29,8 +29,20 @@ const render_catPage = async(req,res, next)=>{
     }
 }
 
+const random_cat = async(req,res)=>{
+    try{
+        const cat = await randomCat()
+        console.log(cat)
+        res.redirect(`/cat/${cat.name}`)
+    }catch(err){
+        console.log(err)
+        res.status(500).send(err.message)
+    }
+}
+
 module.exports = {
     homepage_render,
     home_redirect,
-    render_catPage
+    render_catPage,
+    random_cat
 }

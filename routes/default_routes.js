@@ -9,4 +9,6 @@ router.get("/", controller.home_redirect)
 
 router.get("/cat/:name", controller.render_catPage)
 
+router.get("/randomCat", controller.random_cat)
+
 module.exports = router
