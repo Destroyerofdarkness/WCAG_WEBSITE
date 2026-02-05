@@ -1,0 +1,50 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+main img{
+    width: max-content;
+    height: 25vw;
+    align-self: center;
+    margin-top: 2vw;
+}
+main h2{
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+    margin-top: 1vw;
+    font-weight: 300;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+}
+main section{
+    margin: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    max-width: 25vw;
+}
+main section h3{
+    font-family: var(--primaryFont);
+    font-weight: 300;
+    font-size: 2.5vw;
+    margin: 0;
+    color: var(--primaryColor);
+}
+main section p{
+    margin: 0;
+    margin-top: 0.4vw;
+    font-size: 2vw;
+    font-weight: 300;
+    font-family: var(--primaryFont);
+    color: var(--primaryColor);
+
+}
+:root {
+  --primaryColor: #4a376d;
+  --primaryFont: "Jomhuria", serif;
+} 

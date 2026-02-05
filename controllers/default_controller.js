@@ -1,3 +1,4 @@
+const {findCatDetails}= require("../handlers/fetchCatData")
 
 const homepage_render = (req,res)=>{
     try{
@@ -16,8 +17,20 @@ const home_redirect = (req,res)=>{
     }
 }
 
+const render_catPage = async(req,res, next)=>{
+  const cat = req.params.name  
+    try{
+        const catInfo = await findCatDetails(cat)
+        res.render("catPage", {title: catInfo.name, cat: catInfo})
+    }catch(err){
+        console.log(err)
+        res.status(500).send(err)
+        next()
+    }
+}
 
 module.exports = {
     homepage_render,
-    home_redirect
+    home_redirect,
+    render_catPage
 }

@@ -1,0 +1,14 @@
+<%- include("./partials/head.ejs") %>
+<link rel="stylesheet" href="/css/catPage.css">
+<%- include("./partials/header.ejs") %>
+<main>
+    <img src="<%= cat.img %>" alt="A cat picture where the cat is very silly and the picture looks funny">
+    <h2><%= cat.name %></h2>
+    <section>
+        <h3>Backstory:</h3>
+        <p><%= cat.backstory %></p>
+    </section>
+    
+</main>
+
+<%- include("./partials/footer.ejs") %> 

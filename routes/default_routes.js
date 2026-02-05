@@ -7,4 +7,6 @@ router.get("/home",controller.homepage_render)
 
 router.get("/", controller.home_redirect)
 
+router.get("/cat/:name", controller.render_catPage)
+
 module.exports = router
